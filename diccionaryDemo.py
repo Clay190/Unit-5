@@ -7,4 +7,7 @@ dictionary = ['alphabet','sweatshirt','sweatpants','shorts','computer','waterbot
 dictionary.sort()
 
 number = int(input("what number word would you like to look up?"))
-print("Word number", number, "is", dictionary[number-1])
+if number >len(dictionary):
+    print("Bruh, you stupid")
+else:
+    print("Word number", number, "is", dictionary[number-1])
