@@ -11,7 +11,7 @@ day = date.today
 month = date.month
 year = date.year
 
-print(today)
+
 print(day)
 print(year)
 print(month)
