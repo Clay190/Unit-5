@@ -17,10 +17,14 @@ for i in range(0, len(numbers)):
 
 numbers.sort()
 
+if len(numbers)%2 == 0:
+    lth = len(numbers)//2
+else:
+    lth = len(numbers)//2
+    
+
 print("Min: ", min(numbers))
 print("Max: ", max(numbers))
 print("Mean: ", sum(numbers)/len(numbers))
 print("Mode: ", total)
-
-'''
-print("Median: ", numbers[len(numbers)//2,(len(numbers)//2)+1])'''
+print("Median: ", numbers[lth])
