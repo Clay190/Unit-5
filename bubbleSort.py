@@ -24,12 +24,14 @@ procedure bubbleSort( A : list of sortable items )
 end procedure'''
 
 def mySort(L):
+    n = len(L)
     swapped = True
-    while swapped == True:
-        for i in range(1,N):
-            if L[i-1] > L[i]:
-                A[i], A[i+1] = A[i+1], A[i]
+    while swapped:
         swapped = False
+        for i in range(1,n):
+            if L[i-1] > L[i]:
+                L[i], L[i-1] = L[i-1], L[i]
+                swapped = True
     return L
 
 if __name__ == '__main__':
@@ -53,3 +55,4 @@ if __name__ == '__main__':
     except:
         print('Your sort did not work')
     
+
