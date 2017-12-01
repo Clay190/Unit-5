@@ -5,5 +5,5 @@
 from random import randint
 
 months = ['January', 'February', "March", 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-num = randint(1,12)
+num = randint(0,11)
 print(months[num])
